@@ -1623,7 +1623,7 @@ namespace NPOI.XSSF.UserModel
         public bool IsDate1904()
         {
             CT_WorkbookPr workbookPr = workbook.workbookPr;
-            return workbookPr.date1904Specified && workbookPr.date1904;
+            return workbookPr != null && workbookPr.date1904Specified && workbookPr.date1904;
         }
 
         /**
